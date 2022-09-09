@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Pop method</h2>
+<p id="test"></p>
+<p id="test2"></p>
+
+<h2>Push method</h2>
+<p id="test3"></p>
+<p id="test4"></p>
+
+<h2>Shift method</h2>
+<p id="test5"></p>
+<p id="test6"></p>
+
+<h2>Slicing</h2>
+<p id="test7"></p>
+
+<h2>Shifting</h2>
+<p>prints out the element that was shifted out of the array</p>
+<p id="test8"></p>
+
+<script>
+const friends = ["Grace", "Daniel", "Drew", "Adam", "Morgan"];
+document.getElementById("test").innerHTML = friends.pop();
+document.getElementById("test2").innerHTML = friends;
+
+document.getElementById("test3").innerHTML = friends;
+friends.push("Anthony");
+document.getElementById("test4").innerHTML = friends;
+
+document.getElementById("test5").innerHTML = friends;
+friends.shift();
+document.getElementById("test6").innerHTML = friends;
+</script>
+
+<script>
+const numbers = [45, 78, 34, 10];
+const couple = numbers.slice(2);
+document.getElementById("test7").innerHTML = numbers + "<br><br>" + couple;
+
+document.getElementById("test8").innerHTML = numbers.shift();
+</script>
+</body>
+</html>

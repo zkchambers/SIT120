@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hi my name is Zoe Chambers!</p>
+<p>It has a string length (including spaces) of: </p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="test2">This will change to all capital letters</p>
+
+<p id="test3"> This will add 2 or more strings together </p>
+
+<p>Prints index of 1 which is: </p>
+<p id="test4"></p>
+
+<button onclick="myFunction2()">Click me</button>
+<p id="test5">THIS WILL CONVERT TO LOWER CASE</p>
+
+<script>
+let text0 = "Hi my name is Zoe Chambers!";
+document.getElementById("test").innerHTML = text.length;
+</script>
+<script>
+function myFunction() {
+	let text = document.getElementById("test2").innerHTML;
+	document.getElementById("test2").innerHTML = text.toUpperCase();
+}
+</script>
+<script>
+let text1 = "Zoe";
+let text2 = "Chambers";
+let text3 = text1.concat(" ",text2);
+document.getElementById("test3").innerHTML = text3;
+</script>
+<script>
+var text5 = "Zoe Chambers";
+document.getElementById("test4").innerHTML = text5.charAt(1);
+</script>
+<script>
+function myFunction2() {
+ let text = document.getElementById("test5").innerHTML;
+ document.getElementById("test5").innerHTML = text.toLowerCase();
+}
+</script>

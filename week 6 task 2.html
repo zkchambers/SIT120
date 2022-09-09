@@ -1,0 +1,26 @@
+<!DOCTYPE hml>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<h2>Munity Mob Memebers</h2>
+		<div id="app">
+		<input type="checkbox" id="head" value="Head" v-model="checkedNames">
+		<label for="head">Head</label>
+		<input type="checkbox" id="blue" value="Blue" v-model="checkedNames">
+		<label for="blue">Blue</label>
+		<input type="checkbox" id="tyreman" value="Tyreman" v-model="checkedNames">
+		<label for="tyreman">Tyreman</label><br>
+		<span>Checked names: {{checkedNames}}</span>
+		</div>
+	<script>
+	new Vue ({
+		el: '#app',
+		data: {
+			checkedNames: []
+		}
+	})
+	</script>
+	</body>
+</html>

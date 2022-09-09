@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'BlackPearl'
+    src: url('BlackPearl.ttf')
+}
+
+.header img {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.header h1 { 
+	font-family: BlackPearl;
+	font-size: 300%;
+	margin: 0;
+	color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 110px;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: 200px;
+  position: fixed;
+  background-color: #000000;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+li a.active {
+  background-color: #800000;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+body {
+	background-color: black;
+	margin: auto;
+}
+
+.center {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: auto;
+}
+
+
+
+
+
