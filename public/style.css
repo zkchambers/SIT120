@@ -1,0 +1,135 @@
+.header img {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.header h1 { 
+	font-family: BlackPearl;
+	font-size: 300%;
+	margin: 0;
+	color: white;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 110px;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: 200px;
+  position: fixed;
+  background-color: #000000;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+li a.active {
+  background-color: #800000;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+body {
+	background-color: black;
+	margin: auto;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #990000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media screen and (max-width: 500px) {
+	.header img, .header h1 {
+		float: none;
+		display: block;
+		text-align: left;
+		font-size: 80%;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	ul, li a {
+		display: block;
+		font-size: 80%;
+		width: auto;
+		height: auto;
+	}
+}
